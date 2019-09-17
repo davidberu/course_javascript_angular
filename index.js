@@ -45,5 +45,42 @@ const EqualMess = 'It is equal!';
 
 //loops
 for(let i = 10; i < 30; i++){
-  console.log(i);
+  //console.log(i);
 }
+
+//factory functions
+function createCircle(){
+  const circle {
+    radius: 1,
+    location: {
+      x: 1,
+      y: 1
+    }
+    isVisible: true,
+    draw: function(){
+      console.log('draw');
+    }
+  }
+  return circle;
+}
+
+function createCircle2(radius, x, y){
+  return{
+    radius: radius,
+    location: {
+      x: x,
+      y: y
+    }
+    isVisible: true,
+    draw: function(){
+        //console.log('draw');
+    }
+  }
+}
+
+function Video(title){
+  this.title = title;
+  console.log(this);
+}
+
+const V = new Video('Alladin');
