@@ -35,10 +35,15 @@ console.log(SplitIntroMess);
 
 const EqualMess = 'It is equal!';
 
-if(SplitIntroMess.lenght > 6){
+/*if(SplitIntroMess.lenght > 6){
   alert('it is bigger!');
 }else if(SplitIntroMess < 6){
   alert('It is LOWER bitch!');
 }else{
   alert(EqualMess);
-};
+};*/
+
+//loops
+for(let i = 10; i < 30; i++){
+  console.log(i);
+}
