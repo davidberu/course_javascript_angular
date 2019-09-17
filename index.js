@@ -4,24 +4,41 @@ console.log('How are you today my friend?');
 let FirstName = 'Paul';
 let LastName = 'Rodriguez';
 const CanBeChangedVar = 'OH';
-
-//console.log(FirstName + LastName + ' ' + CanBeChangedVar);
+const IntroMessage = 'Here are you\'r business informations: \n' ;
 
 let Musicien = {
   Username: 'Baltami',
   UserAge: 35.1,
   Password: 'o90890432do09,'
 };
-//console.log(Musicien.UserAge);
-//alert(Musicien.Password);
 
+// Array for the Band infos
 let Bands = [FirstName, LastName];
 Bands[2] = 'The Sainte paix';
 
-//console.log(Bands[2]);
-
+// Function to display venu infos
 function DisplayVenueCard(VenueName,Location,MusicStyle){
- console.log(VenueName + '/' + Location + MusicStyle);
+ console.log(VenueName + Location + MusicStyle);
 };
 
-DisplayVenueCard('La sainte paix', 'Drummondville', 'Rock and roll');
+console.log(IntroMessage);
+
+DisplayVenueCard(
+  'Venue Name: ' + 'La sainte paix \n',
+  'Location: ' + 'Drummondville\n',
+  'Style of music: ' + 'Rock and roll'
+);
+
+let SplitIntroMess = IntroMessage.split(' ');
+console.log(SplitIntroMess.length);
+console.log(SplitIntroMess);
+
+const EqualMess = 'It is equal!';
+
+if(SplitIntroMess.lenght > 6){
+  alert('it is bigger!');
+}else if(SplitIntroMess < 6){
+  alert('It is LOWER bitch!');
+}else{
+  alert(EqualMess);
+};
